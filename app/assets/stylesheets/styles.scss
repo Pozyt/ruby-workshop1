@@ -1,0 +1,101 @@
+:root {
+  --height: 40px;
+  --button-radius: 5px;
+
+  --accent: #3f51b5;
+  --main: white;
+  --text: #333;
+}
+
+.button {
+  background-color: yellow;
+  text-decoration: none;
+  padding: 0 20px;
+  border-radius: 5px;
+  color: green;
+  height: var(--height);
+  line-height: var(--height);
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color .3s ease-in-out;
+
+   }
+
+.button:hover {
+  background-color: pink;
+}
+
+.button:active {
+  transform: translateY(2px);
+}
+
+.button:visited {
+  color: grey;
+}
+
+.button--secondary {
+  line-height: calc(40px / 2);
+  height: calc(40px / 2)
+}
+
+.heading {
+  /* wpisz odpowiednie style */
+}
+
+.panel {
+  width: -moz-fit-content;
+  background: orange;
+  padding: 1em;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.panel + .panel {
+  margin-top: 30px;
+}
+
+.panel__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+  display: flex;
+}
+
+.panel__item + .panel__item {
+  /* wpisz odpowiednie style */
+}
+
+.panel__title {
+  margin: 0;
+}
+
+.panel__text {
+  margin: 0;
+}
+
+.panel__actions {
+  /* wpisz odpowiednie style */
+}
+
+.panel__action + .panel__action {
+  /* wpisz odpowiednie style */
+}
+
+@media screen and (min-width: 820px) {
+  .panel__list,
+  .panel__actions {
+    flex-direction: row;
+     /* wpisz odpowiednie style */
+  }
+
+  .panel__item + .panel__item {
+    margin-left: 30px;
+    margin-top: 0;
+  }
+
+  .panel__action + .panel__action {
+   /* wpisz odpowiednie style */
+  }
+}
